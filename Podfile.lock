@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (5.2.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - Oneline (3.1.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - Moya
+  - "NSObject+Rx (~> 5)"
+  - Oneline
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - "NSObject+Rx"
+    - Oneline
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  Oneline: 6da8b6320d599504341cb8702c6bb59dccd83199
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: 0c0ce879ce4588632440019caa38c16931799cd5
+
+COCOAPODS: 1.9.1
