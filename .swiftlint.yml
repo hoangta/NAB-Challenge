@@ -16,8 +16,7 @@ opt_in_rules:
 
 excluded:
 - Pods
-- Tooling
-- Playground
+- MVVM Template
 
 line_length: 150
 large_tuple: 3

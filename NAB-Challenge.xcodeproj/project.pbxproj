@@ -50,6 +50,14 @@
 		06A1D90C24ADA1A3003DF6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06A1D91F24ADA662003DF6C4 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		06A1D92224ADA7D0003DF6C4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		06A1D92524ADA8CA003DF6C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		06A1D92624ADA8CA003DF6C4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		06A1D92924ADA8CA003DF6C4 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		06A1D92B24ADA8CA003DF6C4 /* ___FILEBASENAME___.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "___FILEBASENAME___.storyboard"; sourceTree = "<group>"; };
+		06A1D92C24ADA8CA003DF6C4 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		06A1D92D24ADA8CA003DF6C4 /* ___FILEBASENAME___ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewModel.swift"; sourceTree = "<group>"; };
+		06A1D92E24ADA8CA003DF6C4 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		06A1D92F24ADA8CA003DF6C4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		4ED9071E80EAEE297E3D3951 /* Pods-NAB-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-Challenge.release.xcconfig"; path = "Target Support Files/Pods-NAB-Challenge/Pods-NAB-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		6A3716FC4E7645F27A27C3B7 /* Pods-NAB-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-NAB-ChallengeTests/Pods-NAB-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		85D67A3AEBD989D043932BFC /* Pods-NAB-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NAB-ChallengeUITests/Pods-NAB-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 				06A1D8E624ADA19F003DF6C4 /* Products */,
 				20B7C673E64C627F6A773DBF /* Pods */,
 				FD8BD1EDBE20C2A865C833D2 /* Frameworks */,
+				06A1D92424ADA8CA003DF6C4 /* MVVM Template */,
 				06A1D92224ADA7D0003DF6C4 /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
@@ -193,6 +202,45 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		06A1D92424ADA8CA003DF6C4 /* MVVM Template */ = {
+			isa = PBXGroup;
+			children = (
+				06A1D92524ADA8CA003DF6C4 /* Makefile */,
+				06A1D92624ADA8CA003DF6C4 /* README.md */,
+				06A1D92724ADA8CA003DF6C4 /* MVVM */,
+			);
+			path = "MVVM Template";
+			sourceTree = "<group>";
+		};
+		06A1D92724ADA8CA003DF6C4 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				06A1D92824ADA8CA003DF6C4 /* MVVM.xctemplate */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		06A1D92824ADA8CA003DF6C4 /* MVVM.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				06A1D92924ADA8CA003DF6C4 /* TemplateIcon@2x.png */,
+				06A1D92A24ADA8CA003DF6C4 /* UIViewController */,
+				06A1D92E24ADA8CA003DF6C4 /* TemplateIcon.png */,
+				06A1D92F24ADA8CA003DF6C4 /* TemplateInfo.plist */,
+			);
+			path = MVVM.xctemplate;
+			sourceTree = "<group>";
+		};
+		06A1D92A24ADA8CA003DF6C4 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				06A1D92B24ADA8CA003DF6C4 /* ___FILEBASENAME___.storyboard */,
+				06A1D92C24ADA8CA003DF6C4 /* ___FILEBASENAME___ViewController.swift */,
+				06A1D92D24ADA8CA003DF6C4 /* ___FILEBASENAME___ViewModel.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		20B7C673E64C627F6A773DBF /* Pods */ = {
