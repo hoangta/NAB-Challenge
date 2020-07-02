@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 final class HomeViewController: UIViewController {
   @IBOutlet weak var viewModel: HomeViewModel!
@@ -16,6 +17,12 @@ final class HomeViewController: UIViewController {
     super.viewDidLoad()
     setupNavigationBar()
     setupSearchController()
+    setupTableView()
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    setupSearch()
   }
 
   private func setupNavigationBar() {
@@ -30,7 +37,25 @@ final class HomeViewController: UIViewController {
     search.searchBar.searchTextField.font(.preferredFont(forTextStyle: .body))
     self.navigationItem.searchController = search
   }
-}
 
-// MARK: Actions
-extension HomeViewController {}
+  private func setupTableView() {
+    tableView.tableFooterView = UIView()
+    tableView.register(ForecastViewCell.self)
+  }
+
+  private func setupSearch() {
+    self.navigationItem.searchController?.searchBar.rx.text
+      .debounce(.milliseconds(200), scheduler: MainScheduler.instance)
+      .flatMapLatest { [unowned self] keyword -> Observable<[Forecast]> in
+        guard let keyword = keyword, keyword.count > 2 else { // Search with keyword of minimum length of 3
+          return .just([])
+        }
+        return self.viewModel.getForecasts(keyword: keyword)
+          .catchErrorJustReturn([])
+      }
+      .bind(to: tableView.rx.items(ForecastViewCell.self)) { _, forecast, cell in
+        cell.setForecast(forecast)
+      }
+      .disposed(by: rx.disposeBag)
+  }
+}

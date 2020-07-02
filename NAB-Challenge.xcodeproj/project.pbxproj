@@ -21,6 +21,9 @@
 		06AE127224ADB24B008581AE /* Codable+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE127124ADB24B008581AE /* Codable+Ex.swift */; };
 		06AE127424ADB268008581AE /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE127324ADB268008581AE /* Forecast.swift */; };
 		06CD309F24ADBEFF0078BE7F /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD308F24ADBBF50078BE7F /* APITests.swift */; };
+		06CD30B024ADC0900078BE7F /* ForecastViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD30AF24ADC0900078BE7F /* ForecastViewCell.swift */; };
+		06CD30B224ADC1470078BE7F /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */; };
+		06CD30B424ADC1870078BE7F /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD30B324ADC1870078BE7F /* Date+Ex.swift */; };
 		1620102F11550412F616210B /* Pods_NABChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A79A6F2010868A5E55972A /* Pods_NABChallengeTests.framework */; };
 		955B04AB63C4BB6F371A8E98 /* Pods_NABChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */; };
 		BE68B1563D9BCEE4C4746FA1 /* Pods_NABChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */; };
@@ -74,6 +77,9 @@
 		06CD309924ADBEF30078BE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06CD30A424ADBF3A0078BE7F /* NABChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NABChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CD30A824ADBF3A0078BE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CD30AF24ADC0900078BE7F /* ForecastViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewCell.swift; sourceTree = "<group>"; };
+		06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
+		06CD30B324ADC1870078BE7F /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2317A4828055CAF962EF9F13 /* Pods-NABChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NABChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-NABChallengeUITests/Pods-NABChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +216,8 @@
 			children = (
 				06A1D93F24ADAB1F003DF6C4 /* UIViewController+Ex.swift */,
 				06AE127124ADB24B008581AE /* Codable+Ex.swift */,
+				06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */,
+				06CD30B324ADC1870078BE7F /* Date+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 		06A1D93824ADA9A3003DF6C4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				06CD30AE24ADC0770078BE7F /* Views */,
 				06A1D93924ADAA4C003DF6C4 /* Home.storyboard */,
 				06A1D93A24ADAA4C003DF6C4 /* HomeViewController.swift */,
 				06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */,
@@ -287,6 +296,14 @@
 				06CD30A824ADBF3A0078BE7F /* Info.plist */,
 			);
 			path = NABChallengeUITests;
+			sourceTree = "<group>";
+		};
+		06CD30AE24ADC0770078BE7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06CD30AF24ADC0900078BE7F /* ForecastViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		20B7C673E64C627F6A773DBF /* Pods */ = {
@@ -559,11 +576,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CD30B224ADC1470078BE7F /* UITableView+Ex.swift in Sources */,
 				06A1D92024ADA662003DF6C4 /* Dependencies.swift in Sources */,
 				06AE126C24ADB0E3008581AE /* APIClient.swift in Sources */,
 				06A1D94024ADAB1F003DF6C4 /* UIViewController+Ex.swift in Sources */,
 				06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */,
 				06AE127424ADB268008581AE /* Forecast.swift in Sources */,
+				06CD30B424ADC1870078BE7F /* Date+Ex.swift in Sources */,
+				06CD30B024ADC0900078BE7F /* ForecastViewCell.swift in Sources */,
 				06A1D93D24ADAA4C003DF6C4 /* HomeViewController.swift in Sources */,
 				06AE127224ADB24B008581AE /* Codable+Ex.swift in Sources */,
 				06AE126A24ADB0AD008581AE /* API.swift in Sources */,
