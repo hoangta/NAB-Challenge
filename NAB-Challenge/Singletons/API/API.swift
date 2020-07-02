@@ -43,3 +43,11 @@ extension API: TargetType {
 
   var sampleData: Data { return Data() }
 }
+
+extension API: HasCachePolicy {
+  var cachePolicy: URLRequest.CachePolicy {
+    switch self {
+    case .getForecasts: return .returnCacheDataElseLoad
+    }
+  }
+}

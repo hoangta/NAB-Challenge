@@ -16,4 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.rootViewController = HomeViewController.instantiate().embeded()
     return true
   }
+
+  func applicationSignificantTimeChange(_ application: UIApplication) {
+    // Remove cache when date changes
+    URLCache.shared.removeAllCachedResponses()
+  }
 }

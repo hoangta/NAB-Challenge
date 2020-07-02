@@ -26,7 +26,7 @@ extension APIClient {
 final class APIClient: NSObject {
   static let shared = APIClient()
 
-  private static let provider = MoyaProvider<API>()
+  private static let provider = MoyaProvider<API>(plugins: [CachePolicyPlugin()])
 
   func request<Object: Decodable>(_ API: API, for type: Object.Type, using provider: MoyaProvider<API> = provider) -> Single<Object> {
     return Single<Object>.create { single in
