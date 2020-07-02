@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>NABChallenge.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>06A1D8E424ADA19F003DF6C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>06A1D8FA24ADA1A3003DF6C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>06A1D90524ADA1A3003DF6C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
