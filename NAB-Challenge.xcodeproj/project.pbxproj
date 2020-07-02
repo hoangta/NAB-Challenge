@@ -25,6 +25,7 @@
 		06CD30B224ADC1470078BE7F /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */; };
 		06CD30B424ADC1870078BE7F /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD30B324ADC1870078BE7F /* Date+Ex.swift */; };
 		06D0766624ADD1D40080C1B6 /* API+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0766524ADD1D40080C1B6 /* API+Cache.swift */; };
+		06D0766924ADDC9D0080C1B6 /* UIView+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0766824ADDC9D0080C1B6 /* UIView+State.swift */; };
 		1620102F11550412F616210B /* Pods_NABChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A79A6F2010868A5E55972A /* Pods_NABChallengeTests.framework */; };
 		955B04AB63C4BB6F371A8E98 /* Pods_NABChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */; };
 		BE68B1563D9BCEE4C4746FA1 /* Pods_NABChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */; };
@@ -82,6 +83,7 @@
 		06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		06CD30B324ADC1870078BE7F /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		06D0766524ADD1D40080C1B6 /* API+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Cache.swift"; sourceTree = "<group>"; };
+		06D0766824ADDC9D0080C1B6 /* UIView+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+State.swift"; sourceTree = "<group>"; };
 		15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2317A4828055CAF962EF9F13 /* Pods-NABChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NABChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-NABChallengeUITests/Pods-NABChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 				06AE127124ADB24B008581AE /* Codable+Ex.swift */,
 				06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */,
 				06CD30B324ADC1870078BE7F /* Date+Ex.swift */,
+				06D0766824ADDC9D0080C1B6 /* UIView+State.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				06A1D94024ADAB1F003DF6C4 /* UIViewController+Ex.swift in Sources */,
 				06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */,
 				06AE127424ADB268008581AE /* Forecast.swift in Sources */,
+				06D0766924ADDC9D0080C1B6 /* UIView+State.swift in Sources */,
 				06D0766624ADD1D40080C1B6 /* API+Cache.swift in Sources */,
 				06CD30B424ADC1870078BE7F /* Date+Ex.swift in Sources */,
 				06CD30B024ADC0900078BE7F /* ForecastViewCell.swift in Sources */,

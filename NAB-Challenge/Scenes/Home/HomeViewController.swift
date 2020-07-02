@@ -45,12 +45,32 @@ final class HomeViewController: UIViewController {
 
   private func setupSearch() {
     self.navigationItem.searchController?.searchBar.rx.text
+      .do(onNext: { [unowned self] keyword in
+        // Show loading when keyword reaches length of 3
+        if let keyword = keyword, keyword.count > 2 {
+          self.tableView.setState(.loading)
+        } else {
+          self.tableView.setState(.normal)
+        }
+      })
       .debounce(.milliseconds(200), scheduler: MainScheduler.instance)
       .flatMapLatest { [unowned self] keyword -> Observable<[Forecast]> in
         guard let keyword = keyword, keyword.count > 2 else { // Search with keyword of minimum length of 3
           return .just([])
         }
         return self.viewModel.getForecasts(keyword: keyword)
+          .do(onNext: { [unowned self] _ in self.tableView.setState(.normal) },
+              onError: { [unowned self] error in
+                switch error {
+                case APIClient.APIError.cityNotFound:
+                  let empty = UILabel(error.localizedDescription).align(.center).font(.preferredFont(forTextStyle: .body))
+                  self.tableView.setState(.empty(empty))
+
+                default: self.tableView.setState(.retry(block: {
+                  self.navigationItem.searchController?.searchBar.searchTextField.sendActions(for: .editingChanged)
+                }))
+                }
+          })
           .catchErrorJustReturn([])
       }
       .bind(to: tableView.rx.items(ForecastViewCell.self)) { _, forecast, cell in
