@@ -17,6 +17,8 @@
 		06A1D93D24ADAA4C003DF6C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D93A24ADAA4C003DF6C4 /* HomeViewController.swift */; };
 		06A1D93E24ADAA4C003DF6C4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */; };
 		06A1D94024ADAB1F003DF6C4 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D93F24ADAB1F003DF6C4 /* UIViewController+Ex.swift */; };
+		06AE126A24ADB0AD008581AE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE126924ADB0AD008581AE /* API.swift */; };
+		06AE126C24ADB0E3008581AE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE126B24ADB0E3008581AE /* APIClient.swift */; };
 		1330171AD7C577F199DD896C /* Pods_NAB_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D08F4F3D781AA0F3B6C884 /* Pods_NAB_ChallengeTests.framework */; };
 		1AD8A8D25C1530D7B4B85B33 /* Pods_NAB_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67D4F3F753BEB2B8EC19694 /* Pods_NAB_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		06A1D93A24ADAA4C003DF6C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		06A1D93F24ADAB1F003DF6C4 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		06AE126924ADB0AD008581AE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		06AE126B24ADB0E3008581AE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		4ED9071E80EAEE297E3D3951 /* Pods-NAB-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-Challenge.release.xcconfig"; path = "Target Support Files/Pods-NAB-Challenge/Pods-NAB-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		6A3716FC4E7645F27A27C3B7 /* Pods-NAB-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-NAB-ChallengeTests/Pods-NAB-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		85D67A3AEBD989D043932BFC /* Pods-NAB-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NAB-ChallengeUITests/Pods-NAB-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		06A1D91C24ADA2AE003DF6C4 /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				06AE126824ADB09F008581AE /* API */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -258,6 +263,15 @@
 				06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		06AE126824ADB09F008581AE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				06AE126924ADB0AD008581AE /* API.swift */,
+				06AE126B24ADB0E3008581AE /* APIClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		20B7C673E64C627F6A773DBF /* Pods */ = {
@@ -359,6 +373,7 @@
 					};
 					06A1D8FA24ADA1A3003DF6C4 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 06A1D8E424ADA19F003DF6C4;
 					};
 					06A1D90524ADA1A3003DF6C4 = {
@@ -525,9 +540,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A1D92024ADA662003DF6C4 /* Dependencies.swift in Sources */,
+				06AE126C24ADB0E3008581AE /* APIClient.swift in Sources */,
 				06A1D94024ADAB1F003DF6C4 /* UIViewController+Ex.swift in Sources */,
 				06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */,
 				06A1D93D24ADAA4C003DF6C4 /* HomeViewController.swift in Sources */,
+				06AE126A24ADB0AD008581AE /* API.swift in Sources */,
 				06A1D93E24ADAA4C003DF6C4 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +748,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG986SPRQ5;
 				INFOPLIST_FILE = "NAB-ChallengeTests/Info.plist";
@@ -742,6 +760,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ht.NAB-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NAB-Challenge.app/NAB-Challenge";
@@ -754,6 +773,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG986SPRQ5;
 				INFOPLIST_FILE = "NAB-ChallengeTests/Info.plist";
