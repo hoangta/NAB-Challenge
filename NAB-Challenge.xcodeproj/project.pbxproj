@@ -86,6 +86,7 @@
 		06D0767224ADE0190080C1B6 /* NABChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NABChallengeUITests.swift; sourceTree = "<group>"; };
 		06D0767424ADE0190080C1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06D0767A24ADE9590080C1B6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		06D0767B24ADEA2B0080C1B6 /* mvvm-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mvvm-template.png"; sourceTree = "<group>"; };
 		15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2317A4828055CAF962EF9F13 /* Pods-NABChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NABChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-NABChallengeUITests/Pods-NABChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +233,7 @@
 		06A1D92424ADA8CA003DF6C4 /* MVVM Template */ = {
 			isa = PBXGroup;
 			children = (
+				06D0767B24ADEA2B0080C1B6 /* mvvm-template.png */,
 				06A1D92524ADA8CA003DF6C4 /* Makefile */,
 				06A1D92624ADA8CA003DF6C4 /* README.md */,
 				06A1D92724ADA8CA003DF6C4 /* MVVM */,
