@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		0304538B81498698A7CFF7C3 /* Pods_NAB_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46900706D342397E39858CF /* Pods_NAB_Challenge.framework */; };
 		06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D8E824ADA19F003DF6C4 /* AppDelegate.swift */; };
-		06A1D8F024ADA19F003DF6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D8EE24ADA19F003DF6C4 /* Main.storyboard */; };
 		06A1D8F224ADA1A3003DF6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D8F124ADA1A3003DF6C4 /* Assets.xcassets */; };
 		06A1D8F524ADA1A3003DF6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D8F324ADA1A3003DF6C4 /* LaunchScreen.storyboard */; };
 		06A1D92024ADA662003DF6C4 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D91F24ADA662003DF6C4 /* Dependencies.swift */; };
 		06A1D92324ADA7D0003DF6C4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D92224ADA7D0003DF6C4 /* .swiftlint.yml */; };
+		06A1D93C24ADAA4C003DF6C4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D93924ADAA4C003DF6C4 /* Home.storyboard */; };
+		06A1D93D24ADAA4C003DF6C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D93A24ADAA4C003DF6C4 /* HomeViewController.swift */; };
+		06A1D93E24ADAA4C003DF6C4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */; };
+		06A1D94024ADAB1F003DF6C4 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D93F24ADAB1F003DF6C4 /* UIViewController+Ex.swift */; };
 		1330171AD7C577F199DD896C /* Pods_NAB_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D08F4F3D781AA0F3B6C884 /* Pods_NAB_ChallengeTests.framework */; };
 		1AD8A8D25C1530D7B4B85B33 /* Pods_NAB_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67D4F3F753BEB2B8EC19694 /* Pods_NAB_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +43,6 @@
 		00EF5562A59481A767C5332A /* Pods-NAB-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-NAB-Challenge/Pods-NAB-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		06A1D8E524ADA19F003DF6C4 /* NAB-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NAB-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A1D8E824ADA19F003DF6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06A1D8EF24ADA19F003DF6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A1D8F124ADA1A3003DF6C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A1D8F424ADA1A3003DF6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A1D8F624ADA1A3003DF6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 		06A1D92D24ADA8CA003DF6C4 /* ___FILEBASENAME___ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewModel.swift"; sourceTree = "<group>"; };
 		06A1D92E24ADA8CA003DF6C4 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		06A1D92F24ADA8CA003DF6C4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		06A1D93924ADAA4C003DF6C4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		06A1D93A24ADAA4C003DF6C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		06A1D93F24ADAB1F003DF6C4 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		4ED9071E80EAEE297E3D3951 /* Pods-NAB-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-Challenge.release.xcconfig"; path = "Target Support Files/Pods-NAB-Challenge/Pods-NAB-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		6A3716FC4E7645F27A27C3B7 /* Pods-NAB-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-NAB-ChallengeTests/Pods-NAB-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		85D67A3AEBD989D043932BFC /* Pods-NAB-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAB-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NAB-ChallengeUITests/Pods-NAB-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 		06A1D91924ADA298003DF6C4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				06A1D93824ADA9A3003DF6C4 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -190,7 +197,6 @@
 		06A1D91D24ADA2B7003DF6C4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				06A1D8EE24ADA19F003DF6C4 /* Main.storyboard */,
 				06A1D8F324ADA1A3003DF6C4 /* LaunchScreen.storyboard */,
 				06A1D8F124ADA1A3003DF6C4 /* Assets.xcassets */,
 			);
@@ -200,6 +206,7 @@
 		06A1D91E24ADA2BC003DF6C4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				06A1D93F24ADAB1F003DF6C4 /* UIViewController+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +248,16 @@
 				06A1D92D24ADA8CA003DF6C4 /* ___FILEBASENAME___ViewModel.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		06A1D93824ADA9A3003DF6C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06A1D93924ADAA4C003DF6C4 /* Home.storyboard */,
+				06A1D93A24ADAA4C003DF6C4 /* HomeViewController.swift */,
+				06A1D93B24ADAA4C003DF6C4 /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		20B7C673E64C627F6A773DBF /* Pods */ = {
@@ -376,9 +393,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A1D92324ADA7D0003DF6C4 /* .swiftlint.yml in Resources */,
+				06A1D93C24ADAA4C003DF6C4 /* Home.storyboard in Resources */,
 				06A1D8F524ADA1A3003DF6C4 /* LaunchScreen.storyboard in Resources */,
 				06A1D8F224ADA1A3003DF6C4 /* Assets.xcassets in Resources */,
-				06A1D8F024ADA19F003DF6C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +525,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A1D92024ADA662003DF6C4 /* Dependencies.swift in Sources */,
+				06A1D94024ADAB1F003DF6C4 /* UIViewController+Ex.swift in Sources */,
 				06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */,
+				06A1D93D24ADAA4C003DF6C4 /* HomeViewController.swift in Sources */,
+				06A1D93E24ADAA4C003DF6C4 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,14 +562,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06A1D8EE24ADA19F003DF6C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06A1D8EF24ADA19F003DF6C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06A1D8F324ADA1A3003DF6C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

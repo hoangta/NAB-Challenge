@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rrn-Ba-fsN">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather Forecast-->
+        <scene sceneID="gch-sP-JiX">
+            <objects>
+                <viewController title="Weather Forecast" id="rrn-Ba-fsN" customClass="HomeViewController" customModule="NAB_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLm-vL-dlY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UpY-s8-az6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jbj-tV-cyJ" firstAttribute="bottom" secondItem="UpY-s8-az6" secondAttribute="bottom" id="01V-zQ-wZJ"/>
+                            <constraint firstItem="jbj-tV-cyJ" firstAttribute="trailing" secondItem="UpY-s8-az6" secondAttribute="trailing" id="Td3-t2-rzi"/>
+                            <constraint firstItem="UpY-s8-az6" firstAttribute="leading" secondItem="jbj-tV-cyJ" secondAttribute="leading" id="kBw-pZ-8KG"/>
+                            <constraint firstItem="UpY-s8-az6" firstAttribute="top" secondItem="jbj-tV-cyJ" secondAttribute="top" id="u6K-0F-Rs3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jbj-tV-cyJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="UpY-s8-az6" id="7bp-x5-dVO"/>
+                        <outlet property="viewModel" destination="GdY-C8-k4M" id="auH-ft-h65"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMX-fp-CrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="GdY-C8-k4M" customClass="HomeViewModel" customModule="NAB_Challenge" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="rrn-Ba-fsN" id="jWu-pg-seA"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="47" y="152"/>
+        </scene>
+    </scenes>
+</document>
