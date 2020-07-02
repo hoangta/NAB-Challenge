@@ -1,0 +1,33 @@
+disabled_rules:
+- trailing_whitespace
+- identifier_name
+- function_parameter_count
+
+opt_in_rules:
+- overridden_super_call
+- redundant_type_annotation
+- toggle_bool
+- unneeded_parentheses_in_closure_argument
+- unused_import
+- unused_private_declaration
+- redundant_nil_coalescing
+- multiline_parameters
+- contains_over_first_not_nil
+
+excluded:
+- Pods
+- Tooling
+- Playground
+
+line_length: 150
+large_tuple: 3
+nesting:
+  type_level: 3
+
+custom_rules:
+  vertical_whitespace_closing_braces:
+    included: ".*.swift"
+    regex: '\n[ \t]*\n[ \t]*[)}\]]'
+    name: "Vertical Whitespace before Closing Braces"
+    message: "Don't include vertical whitespace (empty line) before closing braces."
+    severity: warning

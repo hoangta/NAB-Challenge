@@ -9,7 +9,8 @@ target 'NAB-Challenge' do
   pod 'Moya'
   pod 'TinyConstraints'
   pod 'Oneline'
-
+  pod 'SwiftLint'
+  
   target 'NAB-ChallengeTests' do
       inherit! :search_paths
   end
