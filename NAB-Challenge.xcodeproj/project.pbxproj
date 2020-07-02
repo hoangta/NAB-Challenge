@@ -26,9 +26,9 @@
 		06CD30B424ADC1870078BE7F /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD30B324ADC1870078BE7F /* Date+Ex.swift */; };
 		06D0766624ADD1D40080C1B6 /* API+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0766524ADD1D40080C1B6 /* API+Cache.swift */; };
 		06D0766924ADDC9D0080C1B6 /* UIView+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0766824ADDC9D0080C1B6 /* UIView+State.swift */; };
+		06D0767324ADE0190080C1B6 /* NABChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0767224ADE0190080C1B6 /* NABChallengeUITests.swift */; };
 		1620102F11550412F616210B /* Pods_NABChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A79A6F2010868A5E55972A /* Pods_NABChallengeTests.framework */; };
 		955B04AB63C4BB6F371A8E98 /* Pods_NABChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */; };
-		BE68B1563D9BCEE4C4746FA1 /* Pods_NABChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 			remoteGlobalIDString = 06A1D8E424ADA19F003DF6C4;
 			remoteInfo = NABChallenge;
 		};
-		06CD30A924ADBF3A0078BE7F /* PBXContainerItemProxy */ = {
+		06D0767524ADE0190080C1B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 06A1D8DD24ADA19F003DF6C4 /* Project object */;
 			proxyType = 1;
@@ -77,13 +77,14 @@
 		06CD308F24ADBBF50078BE7F /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		06CD309524ADBEF30078BE7F /* NABChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NABChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CD309924ADBEF30078BE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06CD30A424ADBF3A0078BE7F /* NABChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NABChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06CD30A824ADBF3A0078BE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06CD30AF24ADC0900078BE7F /* ForecastViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewCell.swift; sourceTree = "<group>"; };
 		06CD30B124ADC1470078BE7F /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		06CD30B324ADC1870078BE7F /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		06D0766524ADD1D40080C1B6 /* API+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Cache.swift"; sourceTree = "<group>"; };
 		06D0766824ADDC9D0080C1B6 /* UIView+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+State.swift"; sourceTree = "<group>"; };
+		06D0767024ADE0190080C1B6 /* NABChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NABChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06D0767224ADE0190080C1B6 /* NABChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NABChallengeUITests.swift; sourceTree = "<group>"; };
+		06D0767424ADE0190080C1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BD61B979C68D8B75F131BA /* Pods_NABChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2317A4828055CAF962EF9F13 /* Pods-NABChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NABChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-NABChallengeUITests/Pods-NABChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		233A710CDB2ED01FF02EF14F /* Pods_NABChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NABChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,11 +117,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06CD30A124ADBF3A0078BE7F /* Frameworks */ = {
+		06D0766D24ADE0190080C1B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE68B1563D9BCEE4C4746FA1 /* Pods_NABChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +132,7 @@
 			children = (
 				06A1D8E724ADA19F003DF6C4 /* NAB-Challenge */,
 				06CD309624ADBEF30078BE7F /* NABChallengeTests */,
-				06CD30A524ADBF3A0078BE7F /* NABChallengeUITests */,
+				06D0767124ADE0190080C1B6 /* NABChallengeUITests */,
 				06A1D8E624ADA19F003DF6C4 /* Products */,
 				20B7C673E64C627F6A773DBF /* Pods */,
 				FD8BD1EDBE20C2A865C833D2 /* Frameworks */,
@@ -146,7 +146,7 @@
 			children = (
 				06A1D8E524ADA19F003DF6C4 /* NABChallenge.app */,
 				06CD309524ADBEF30078BE7F /* NABChallengeTests.xctest */,
-				06CD30A424ADBF3A0078BE7F /* NABChallengeUITests.xctest */,
+				06D0767024ADE0190080C1B6 /* NABChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,18 +290,10 @@
 		06CD309624ADBEF30078BE7F /* NABChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				06CD308F24ADBBF50078BE7F /* APITests.swift */,
 				06CD309924ADBEF30078BE7F /* Info.plist */,
+				06CD308F24ADBBF50078BE7F /* APITests.swift */,
 			);
 			path = NABChallengeTests;
-			sourceTree = "<group>";
-		};
-		06CD30A524ADBF3A0078BE7F /* NABChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				06CD30A824ADBF3A0078BE7F /* Info.plist */,
-			);
-			path = NABChallengeUITests;
 			sourceTree = "<group>";
 		};
 		06CD30AE24ADC0770078BE7F /* Views */ = {
@@ -310,6 +302,15 @@
 				06CD30AF24ADC0900078BE7F /* ForecastViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		06D0767124ADE0190080C1B6 /* NABChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06D0767224ADE0190080C1B6 /* NABChallengeUITests.swift */,
+				06D0767424ADE0190080C1B6 /* Info.plist */,
+			);
+			path = NABChallengeUITests;
 			sourceTree = "<group>";
 		};
 		20B7C673E64C627F6A773DBF /* Pods */ = {
@@ -383,23 +384,22 @@
 			productReference = 06CD309524ADBEF30078BE7F /* NABChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		06CD30A324ADBF3A0078BE7F /* NABChallengeUITests */ = {
+		06D0766F24ADE0190080C1B6 /* NABChallengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06CD30AB24ADBF3A0078BE7F /* Build configuration list for PBXNativeTarget "NABChallengeUITests" */;
+			buildConfigurationList = 06D0767724ADE0190080C1B6 /* Build configuration list for PBXNativeTarget "NABChallengeUITests" */;
 			buildPhases = (
-				44EAB175A4C4167BC666820C /* [CP] Check Pods Manifest.lock */,
-				06CD30A024ADBF3A0078BE7F /* Sources */,
-				06CD30A124ADBF3A0078BE7F /* Frameworks */,
-				06CD30A224ADBF3A0078BE7F /* Resources */,
+				06D0766C24ADE0190080C1B6 /* Sources */,
+				06D0766D24ADE0190080C1B6 /* Frameworks */,
+				06D0766E24ADE0190080C1B6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				06CD30AA24ADBF3A0078BE7F /* PBXTargetDependency */,
+				06D0767624ADE0190080C1B6 /* PBXTargetDependency */,
 			);
 			name = NABChallengeUITests;
 			productName = NABChallengeUITests;
-			productReference = 06CD30A424ADBF3A0078BE7F /* NABChallengeUITests.xctest */;
+			productReference = 06D0767024ADE0190080C1B6 /* NABChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -419,7 +419,7 @@
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 06A1D8E424ADA19F003DF6C4;
 					};
-					06CD30A324ADBF3A0078BE7F = {
+					06D0766F24ADE0190080C1B6 = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 06A1D8E424ADA19F003DF6C4;
 					};
@@ -440,7 +440,7 @@
 			targets = (
 				06A1D8E424ADA19F003DF6C4 /* NABChallenge */,
 				06CD309424ADBEF30078BE7F /* NABChallengeTests */,
-				06CD30A324ADBF3A0078BE7F /* NABChallengeUITests */,
+				06D0766F24ADE0190080C1B6 /* NABChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -464,7 +464,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06CD30A224ADBF3A0078BE7F /* Resources */ = {
+		06D0766E24ADE0190080C1B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,28 +491,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -z \"$CI\" ]; then\n${PODS_ROOT}/SwiftLint/swiftlint\nfi\n";
-		};
-		44EAB175A4C4167BC666820C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NABChallengeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		5B84C9330C51C91AD114EA95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -607,10 +585,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06CD30A024ADBF3A0078BE7F /* Sources */ = {
+		06D0766C24ADE0190080C1B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D0767324ADE0190080C1B6 /* NABChallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,10 +601,10 @@
 			target = 06A1D8E424ADA19F003DF6C4 /* NABChallenge */;
 			targetProxy = 06CD309A24ADBEF30078BE7F /* PBXContainerItemProxy */;
 		};
-		06CD30AA24ADBF3A0078BE7F /* PBXTargetDependency */ = {
+		06D0767624ADE0190080C1B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 06A1D8E424ADA19F003DF6C4 /* NABChallenge */;
-			targetProxy = 06CD30A924ADBF3A0078BE7F /* PBXContainerItemProxy */;
+			targetProxy = 06D0767524ADE0190080C1B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -835,9 +814,8 @@
 			};
 			name = Release;
 		};
-		06CD30AC24ADBF3A0078BE7F /* Debug */ = {
+		06D0767824ADE0190080C1B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92402C1370F69EBEACAF6D95 /* Pods-NABChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG986SPRQ5;
@@ -855,9 +833,8 @@
 			};
 			name = Debug;
 		};
-		06CD30AD24ADBF3A0078BE7F /* Release */ = {
+		06D0767924ADE0190080C1B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2317A4828055CAF962EF9F13 /* Pods-NABChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG986SPRQ5;
@@ -905,11 +882,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06CD30AB24ADBF3A0078BE7F /* Build configuration list for PBXNativeTarget "NABChallengeUITests" */ = {
+		06D0767724ADE0190080C1B6 /* Build configuration list for PBXNativeTarget "NABChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06CD30AC24ADBF3A0078BE7F /* Debug */,
-				06CD30AD24ADBF3A0078BE7F /* Release */,
+				06D0767824ADE0190080C1B6 /* Debug */,
+				06D0767924ADE0190080C1B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
