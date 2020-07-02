@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D8E824ADA19F003DF6C4 /* AppDelegate.swift */; };
-		06A1D8EB24ADA19F003DF6C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D8EA24ADA19F003DF6C4 /* SceneDelegate.swift */; };
 		06A1D8ED24ADA19F003DF6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1D8EC24ADA19F003DF6C4 /* ViewController.swift */; };
 		06A1D8F024ADA19F003DF6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D8EE24ADA19F003DF6C4 /* Main.storyboard */; };
 		06A1D8F224ADA1A3003DF6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A1D8F124ADA1A3003DF6C4 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		06A1D8E524ADA19F003DF6C4 /* NAB-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NAB-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A1D8E824ADA19F003DF6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06A1D8EA24ADA19F003DF6C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		06A1D8EC24ADA19F003DF6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06A1D8EF24ADA19F003DF6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A1D8F124ADA1A3003DF6C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,13 +97,17 @@
 		06A1D8E724ADA19F003DF6C4 /* NAB-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				06A1D8E824ADA19F003DF6C4 /* AppDelegate.swift */,
-				06A1D8EA24ADA19F003DF6C4 /* SceneDelegate.swift */,
+				06A1D91824ADA282003DF6C4 /* Application */,
+				06A1D91924ADA298003DF6C4 /* Scenes */,
+				06A1D91A24ADA29F003DF6C4 /* Models */,
+				06A1D91B24ADA2A7003DF6C4 /* Views */,
+				06A1D91C24ADA2AE003DF6C4 /* Singletons */,
+				06A1D91E24ADA2BC003DF6C4 /* Extensions */,
+				06A1D91D24ADA2B7003DF6C4 /* Assets */,
 				06A1D8EC24ADA19F003DF6C4 /* ViewController.swift */,
 				06A1D8EE24ADA19F003DF6C4 /* Main.storyboard */,
 				06A1D8F124ADA1A3003DF6C4 /* Assets.xcassets */,
 				06A1D8F324ADA1A3003DF6C4 /* LaunchScreen.storyboard */,
-				06A1D8F624ADA1A3003DF6C4 /* Info.plist */,
 			);
 			path = "NAB-Challenge";
 			sourceTree = "<group>";
@@ -126,6 +128,57 @@
 				06A1D90C24ADA1A3003DF6C4 /* Info.plist */,
 			);
 			path = "NAB-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		06A1D91824ADA282003DF6C4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				06A1D8E824ADA19F003DF6C4 /* AppDelegate.swift */,
+				06A1D8F624ADA1A3003DF6C4 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		06A1D91924ADA298003DF6C4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		06A1D91A24ADA29F003DF6C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06A1D91B24ADA2A7003DF6C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06A1D91C24ADA2AE003DF6C4 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
+		06A1D91D24ADA2B7003DF6C4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		06A1D91E24ADA2BC003DF6C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +314,6 @@
 			files = (
 				06A1D8ED24ADA19F003DF6C4 /* ViewController.swift in Sources */,
 				06A1D8E924ADA19F003DF6C4 /* AppDelegate.swift in Sources */,
-				06A1D8EB24ADA19F003DF6C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG986SPRQ5;
-				INFOPLIST_FILE = "NAB-Challenge/Info.plist";
+				INFOPLIST_FILE = "NAB-Challenge/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ht.NAB-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG986SPRQ5;
-				INFOPLIST_FILE = "NAB-Challenge/Info.plist";
+				INFOPLIST_FILE = "NAB-Challenge/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ht.NAB-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
